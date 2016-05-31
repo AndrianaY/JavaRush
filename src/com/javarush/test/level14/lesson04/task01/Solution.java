@@ -10,14 +10,14 @@ public class Solution
 {
     public static void main(String[] args)
     {
-        School school = getSchool();
+        Building school = getSchool();
         Building shop = getBuilding();
 
         System.out.println(school);
         System.out.println(shop);
     }
 
-    public static School getSchool()
+    public static Building getSchool()
     {
         //измените null на объект класса Building или School
         return new School();

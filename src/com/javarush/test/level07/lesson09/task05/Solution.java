@@ -14,27 +14,24 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+        //Считать строки с консоли и объявить ArrayList list тут
         ArrayList<String> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++)
-        {
-            list.add(reader.readLine());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        for (int i = 0; i < 10; i++){
+            list.add(br.readLine());
         }
         ArrayList<String> result = doubleValues(list);
 
-        for (String text : result)
+        for (String s: result)
         {
-            System.out.println(text);
+            System.out.println(s);
         }
     }
 
     public static ArrayList<String> doubleValues(ArrayList<String> list)
     {
-        for (int j = 0; j < 20; j=j+2)
-        {
-            String s = list.get(j);
-            list.add(j+1, s);
+        for (int i = 0; i < list.size(); i+=2) {
+            list.add(i + 1, list.get(i));
         }
         return list;
     }

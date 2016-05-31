@@ -1,6 +1,7 @@
 package com.javarush.test.level08.lesson06.task02;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -29,37 +30,30 @@ public class Solution
 
     public static void insert10000(List list)
     {
-        for (int i = 0; i < 10000; i++)
-        {
-            list.add(i, new Object());
+        for(int i = 0; i < 10000; i++){
+            list.add(new Object());
         }
-
     }
 
     public static void get10000(List list)
     {
-        for (int i = 0; i < 10000; i++)
-        {
+        for(int i = 0; i < 10000; i++){
             list.get(i);
         }
-
     }
 
     public static void set10000(List list)
     {
-        for (int i = 0; i < 10000; i++)
-        {
+        for(int i = 0; i < 10000; i++){
             list.set(i, new Object());
         }
-
     }
 
     public static void remove10000(List list)
     {
-
-        for (int i = 0; i < 10000; i++)
-        {
-            list.remove(i);
-        }
+        Iterator<Integer> iterator = list.iterator();
+        while(iterator.hasNext())
+            iterator.next();
+        iterator.remove();
     }
 }
