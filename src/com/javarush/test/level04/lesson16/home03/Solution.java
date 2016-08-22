@@ -10,6 +10,16 @@ public class Solution
 {
     public static void main(String[] args)   throws Exception
     {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int sum = 0;
+        int i;
+        do{
+            i = Integer.parseInt(br.readLine());
+            sum = sum + i;
+
+        }
+        while(i != (-1));
+        System.out.println(sum);
         //напишите тут ваш код
     }
 }

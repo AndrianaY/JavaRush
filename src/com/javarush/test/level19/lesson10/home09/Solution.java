@@ -20,30 +20,36 @@ fifth
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.Scanner;
 
 public class Solution {
     public static TestString testString = new TestString();
 
     public static void main(String[] args) {
-        //запоминаем настоящий PrintStream в специальную переменную
         PrintStream consoleStream = System.out;
 
-        //Создаем динамический массив
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        //создаем адаптер к классу PrintStream
         PrintStream stream = new PrintStream(outputStream);
-        //Устанавливаем его как текущий System.out
         System.setOut(stream);
-
-        //Вызываем функцию, которая ничего не знает о наших манипуляциях
         testString.printSomething();
-
-        //Преобразовываем записанные в наш ByteArray данные в строку
         String result = outputStream.toString();
 
-        //Возвращаем все как было
         System.setOut(consoleStream);
 
+        Scanner scanner = new Scanner(result).useDelimiter("\\r\\n");
+        StringBuilder stringBuilder = new StringBuilder();
+        while (scanner.hasNext())
+        {
+            stringBuilder.append(scanner.next() + "\n");
+            if (scanner.hasNext())
+            {
+                stringBuilder.append(scanner.next() + "\n");
+                stringBuilder.append("JavaRush - курсы Java онлайн" + "\n");
+            }
+        }
+        scanner.close();
+        int end = stringBuilder.toString().length();
+        System.out.println(stringBuilder.deleteCharAt(end-1).toString());
 
     }
 

@@ -11,7 +11,7 @@ import java.util.List;
 В файле your_file_name.tmp может быть несколько объектов Human
 Метод main реализован только для вас и не участвует в тестировании
 */
-public class Solution implements Serializable{
+public class Solution {
     public static void main(String[] args) {
         //you can find your_file_name.tmp in your TMP directory or fix outputStream/inputStream according to your real file location
         //вы можете найти your_file_name.tmp в папке TMP или исправьте outputStream/inputStream в соответствии с путем к вашему реальному файлу

@@ -1,10 +1,9 @@
 package com.javarush.test.level08.lesson08.task02;
 
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.Set;
-import java.util.Random;
-
-import static com.javarush.test.level08.lesson08.task02.SetCreate.*;
 
 /* Удалить все числа больше 10
 Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.
@@ -13,44 +12,27 @@ import static com.javarush.test.level08.lesson08.task02.SetCreate.*;
 
 public class Solution
 {
-    public static void main(String args[])
-    {
 
-        HashSet<Integer> setL = createSet();
-        HashSet<Integer> integers;
-        integers = removeAllNumbersMoreThan10(setL);
-        System.out.println(integers);
+    public static HashSet<Integer> createSet()
+    {
+        HashSet<Integer> set = new HashSet<Integer>();
+        for(int i=0; i<20; i++)
+            set.add(i);
+        return set;
+
     }
 
+    public static HashSet<Integer> removeAllNumbersMoreThan10(HashSet<Integer> set)
+    {
+        Iterator li = set.iterator();
+        while(li.hasNext())
+        {
+            int elem = (int) li.next();
+            if (elem > 10){
+                li.remove();
+            }
+        }
+        return set;
+
+    }
 }
-
-class SetCreate
- {
-
-
-     public static HashSet<Integer> createSet()
-     {
-         HashSet<Integer> newSet = new HashSet<>();
-         for (int i = 0; i < 20; i++)
-         {
-             Random random = new Random();
-             int randomInt = random.nextInt(100);
-             newSet.add(randomInt);
-         }
-         return newSet;
-     }
-
-     public static HashSet<Integer> removeAllNumbersMoreThan10(HashSet<Integer> set)
-     {
-         for (Integer num : set)
-         {
-             if (num > 10)
-             {
-                 boolean isremoved = set.remove(num);
-             }
-
-         }
-         return set;
-     }
- }
-

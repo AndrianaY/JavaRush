@@ -1,7 +1,4 @@
-package leetcode;
-
-import java.lang.reflect.Array;
-import java.util.*;
+package otherStaff;
 
 /**
  * Created by Andriana_Yarmoliuk on 2/9/2016.

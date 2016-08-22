@@ -2,7 +2,6 @@ package com.javarush.test.level18.lesson08.task04;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 /* UnsupportedFileName
@@ -12,13 +11,11 @@ import java.io.IOException;
 */
 
 public class TxtInputStream extends FileInputStream {
-    private FileInputStream fileInputStream;
-    public TxtInputStream(String fileName) throws FileNotFoundException
+    public TxtInputStream(String fileName) throws FileNotFoundException, UnsupportedFileNameException
     {
         super(fileName);
-        fileInputStream = this;
+        if(!fileName.endsWith(".txt") ) throw new UnsupportedFileNameException();
     }
-
 
 }
 

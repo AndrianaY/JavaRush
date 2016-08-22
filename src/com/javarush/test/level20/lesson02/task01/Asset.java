@@ -2,7 +2,7 @@ package com.javarush.test.level20.lesson02.task01;
 
 import java.io.*;
 
-public class Asset implements Serializable {
+public class Asset {
     public Asset(String name) {
         this.name = name;
     }
@@ -27,6 +27,7 @@ public class Asset implements Serializable {
 
     public void save(OutputStream outputStream) throws Exception
     {
+
         PrintWriter printWriter = new PrintWriter(outputStream, true);
         printWriter.println(name);
         printWriter.println(price);

@@ -1,9 +1,9 @@
 package com.javarush.test.level08.lesson06.task02;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 /* Провести 10 тысяч вставок, удалений
 Для arrayList и linkedList провести 10 тысяч вставок, удалений, а также вызовов get и set.
@@ -29,31 +29,30 @@ public class Solution
     }
 
     public static void insert10000(List list)
+    { for (int i=0; i<10000; i++)
     {
-        for(int i = 0; i < 10000; i++){
-            list.add(new Object());
-        }
+        list.add(i);
+    }//Напишите тут ваш код
     }
-
     public static void get10000(List list)
     {
-        for(int i = 0; i < 10000; i++){
+        for (int i=0; i<10000; i++)
+        {
             list.get(i);
-        }
+        }//Напишите тут ваш код
     }
-
     public static void set10000(List list)
     {
-        for(int i = 0; i < 10000; i++){
-            list.set(i, new Object());
-        }
+        for (int i=0; i<10000; i++)
+        {
+            list.set(i, i);
+        }//Напишите тут ваш код
     }
-
     public static void remove10000(List list)
     {
-        Iterator<Integer> iterator = list.iterator();
-        while(iterator.hasNext())
-            iterator.next();
-        iterator.remove();
+        for (int i = 0; i < 10000; i++)
+        {
+            list.remove(0);
+        }//Напишите тут ваш код
     }
 }

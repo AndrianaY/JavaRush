@@ -6,24 +6,16 @@ package com.javarush.test.level13.lesson11.home07;
 3. Программа должна компилироваться.
 */
 
-import com.sun.org.apache.xpath.internal.operations.String;
-
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
-       SimpleObject<String> stringObject = new StringObject<String>();
+public class Solution{
+    public static void main(String[] args) throws Exception    {
+        SimpleObject<String> stringObject = new StringObject<Object>();
     }
-
-    interface SimpleObject<T>
-    {
+    interface SimpleObject<T>{
         SimpleObject<T> getInstance();
     }
-
-    public static class StringObject<String> implements SimpleObject<String>{
+    public static class StringObject<T> implements SimpleObject<String>{
         public SimpleObject<String> getInstance(){
             return this;
         }
-     }
-
+    }
 }
