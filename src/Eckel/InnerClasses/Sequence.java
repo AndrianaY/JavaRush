@@ -24,6 +24,7 @@ public class Sequence
 
         private int i = 0;
 
+
         @Override
         public boolean end()
         {
