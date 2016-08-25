@@ -1,4 +1,4 @@
-package Eckel.InnerClasses;
+package otherStaff.Eckel.InnerClasses;
 
 
 /**

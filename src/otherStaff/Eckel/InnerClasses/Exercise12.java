@@ -1,4 +1,4 @@
-package Eckel.InnerClasses;
+package otherStaff.Eckel.InnerClasses;
 
 /**
  * Created by Andriana on 23.08.2016.
@@ -12,8 +12,8 @@ public class Exercise12
     private void method(){
         System.out.println("inside inner instance - metyhod" + field);
     }
-    public Contents contents(final int i){
-        return new Contents()
+    public Eckel.InnerClasses.Contents contents(final int i){
+        return new Eckel.InnerClasses.Contents()
         {
             @Override
             public int value()
@@ -29,7 +29,7 @@ public class Exercise12
     {
         Exercise12 ex = new Exercise12();
         System.out.println(ex.getField());
-        Contents c = ex.contents(15);
+        Eckel.InnerClasses.Contents c = ex.contents(15);
         System.out.println(c.value());
     }
 }

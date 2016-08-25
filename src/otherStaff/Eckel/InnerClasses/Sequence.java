@@ -1,6 +1,6 @@
 package otherStaff.Eckel.InnerClasses;
 
-import com.javarush.test.level20.lesson02.task05.Solution;
+
 
 /**
  * Created by Andriana_Yarmoliuk on 8/18/2016.

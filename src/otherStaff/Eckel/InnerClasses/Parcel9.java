@@ -1,4 +1,4 @@
-package Eckel.InnerClasses;
+package otherStaff.Eckel.InnerClasses;
 
 /**
  * Created by Andriana on 23.08.2016.
@@ -6,8 +6,8 @@ package Eckel.InnerClasses;
 public class Parcel9
 {
 //    arg must be final to use inside anonym inner class
-    public Destination destination(final String dest){
-        return new Destination()
+    public Eckel.InnerClasses.Destination destination(final String dest){
+        return new Eckel.InnerClasses.Destination()
         {
             private String label = dest;
             public String readLabel()
@@ -20,7 +20,7 @@ public class Parcel9
     public static void main(String[] args)
     {
         Parcel9 p = new Parcel9();
-        Destination d = p.destination("Tasmania");
+        Eckel.InnerClasses.Destination d = p.destination("Tasmania");
         System.out.println(d.readLabel());
     }
 }
