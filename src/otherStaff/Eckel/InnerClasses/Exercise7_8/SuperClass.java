@@ -1,4 +1,4 @@
-package otherStaff.Eckel.InnerClasses.Exercise7_8;
+package otherstaff.eckel.innerclasses.Exercise7_8;
 
 /**
  * Created by Andriana_Yarmoliuk on 8/22/2016.

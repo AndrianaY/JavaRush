@@ -1,4 +1,4 @@
-package otherStaff.serializeTricks.java;
+package otherstaff.serializeTricks.java;
 
 /**
  * Created by Andriana_Yarmoliuk on 7/12/2016.
