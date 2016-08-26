@@ -1,7 +1,7 @@
-package otherStaff.Eckel.InnerClasses.Exercise6_2;
+package otherstaff.eckel.innerclasses.Exercise6_2;
 
-import otherStaff.Eckel.InnerClasses.Exercise6.Exercise6;
-import otherStaff.Eckel.InnerClasses.Exercise6_1.Exercise6_1;
+import otherstaff.eckel.innerclasses.Exercise6.Exercise6;
+import otherstaff.eckel.innerclasses.Exercise6_1.Exercise6_1;
 
 /**
  * Created by Andriana_Yarmoliuk on 8/22/2016.

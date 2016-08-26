@@ -1,8 +1,8 @@
-package otherStaff.serializeTricks.test;
+package otherstaff.serializeTricks.test;
 
 import org.junit.Test;
-import otherStaff.serializeTricks.java.Gender;
-import otherStaff.serializeTricks.java.Person;
+import otherstaff.serializeTricks.java.Gender;
+import otherstaff.serializeTricks.java.Person;
 
 import javax.crypto.NoSuchPaddingException;
 import java.io.*;

@@ -1,4 +1,4 @@
-package otherStaff.Eckel.InnerClasses;
+package otherstaff.eckel.innerclasses;
 
 /**
  * Created by Andriana on 23.08.2016.
@@ -6,8 +6,8 @@ package otherStaff.Eckel.InnerClasses;
 //using "instance initialization" to perfor construction on anon inner class
 public class Parcel10
 {
-    public Eckel.InnerClasses.Destination destination(final String dest, final float price){
-        return new Eckel.InnerClasses.Destination()
+    public Destination destination(final String dest, final float price){
+        return new Destination()
         {
             private int cost;
 //            inst init fir each obj
@@ -27,6 +27,6 @@ public class Parcel10
     public static void main(String[] args)
     {
         Parcel10 p = new Parcel10();
-        Eckel.InnerClasses.Destination d = p.destination("Tasmania", 101.395F);
+        Destination d = p.destination("Tasmania", 101.395F);
     }
 }

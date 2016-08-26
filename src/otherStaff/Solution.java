@@ -1,4 +1,4 @@
-package otherStaff;
+package otherstaff;
 
 /**
  * Created by Andriana_Yarmoliuk on 2/9/2016.
