@@ -5,7 +5,9 @@ package otherStaff.Eckel.InnerClasses;
  */
 public class Exercise11
 {
-    private class PrivateInnerClass implements Destination
+    private void f(){}
+
+    private static class PrivateInnerClass implements Destination
     {
 
         @Override
