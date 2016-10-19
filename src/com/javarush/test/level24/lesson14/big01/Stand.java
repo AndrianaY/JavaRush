@@ -5,9 +5,13 @@ package com.javarush.test.level24.lesson14.big01;
  */
 public class Stand extends BaseObject
 {
-    public Stand(double x, double y, double radius)
+    private final double direction; //по x: 1 - вправо, -1 - влево)
+    private double speed;
+    public Stand(double x, double y)
     {
-        super(x, y, radius);
+        super(x,y,3);
+        speed = 1;
+        direction = 0;
     }
 
     @Override
@@ -20,5 +24,15 @@ public class Stand extends BaseObject
     public void move()
     {
 
+    }
+
+    public double getDirection()
+    {
+        return direction;
+    }
+
+    public double getSpeed()
+    {
+        return speed;
     }
 }
