@@ -16,8 +16,22 @@ public class Solution implements Action {
     private Action solutionAction = new Action() {
         //!!!!! Changes can be here
         //!!!!! Изменения могут быть тут
+        FirstClass fc = new FirstClass()
+        {
+            @Override
+            public Action getDependantAction()
+            {
+                return this;
+            }
+        };
+        SecondClass sc = new SecondClass();
 
         public void someAction() {
+            if(param > 0)
+                fc.getDependantAction();
+            else
+                sc.someAction();
+
             //!!!!! All changes have to be here
             //!!!!! Все изменения должны быть только тут
         }

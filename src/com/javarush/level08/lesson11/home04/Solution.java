@@ -21,29 +21,24 @@ public class Solution
     }
 
     public static int getMinimum(List<Integer> array) {
-        int min = array.get(0);
-        for(Integer integ : array)
+        // Найти минимум
+        int min = Integer.MAX_VALUE;
+        for (Integer i:array)
         {
-            if(integ < min)
-            {
-                min = integ;
-            }
+            if(i < min)
+                min = i;
         }
         return min;
     }
 
     public static List<Integer> getIntegerList() throws IOException {
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Integer num = Integer.parseInt(reader.readLine());
-        List<Integer> getList = new ArrayList<>();
-
-        for(int i = 0; i < num; )
-        {
-            Integer numAdd = Integer.parseInt(reader.readLine());
-            getList.add(numAdd);
+        //Тут создать и заполнить список
+        List<Integer> list = new LinkedList<>();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        for (int i = 0; i < n; i++){
+            list.add(Integer.parseInt(br.readLine()));
         }
-
-        return getList;
+        return list;
     }
 }
