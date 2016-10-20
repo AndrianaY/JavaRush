@@ -16,6 +16,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import static com.javarush.level15.lesson12.home04.Planet.EARTH;
+import static com.javarush.level15.lesson12.home04.Planet.MOON;
+import static com.javarush.level15.lesson12.home04.Planet.SUN;
+
 public class Solution {
     public static Planet thePlanet;
     static{
